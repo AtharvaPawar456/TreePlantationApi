@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Node Data</title>
+</head>
+<body>
+    <h1>Edit Node Data for {{ node_data['nodename'] }}</h1>
+
+    <form action="{{ url_for('edit_node_data', nodename=node_data['nodename']) }}" method="POST">
+        <label for="latitude">Latitude:</label><br>
+        <input type="text" id="latitude" name="latitude" value="{{ node_data['latitude'] }}"><br><br>
+
+        <label for="longitude">Longitude:</label><br>
+        <input type="text" id="longitude" name="longitude" value="{{ node_data['longitude'] }}"><br><br>
+
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>

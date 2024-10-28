@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <title>Display Nodes . Tree Plantation Api</title>
+
+    <script>
+        // Auto-refresh every 20 seconds
+        setTimeout(function(){
+            window.location.reload(1);
+        }, 20000);
+    </script>
+</head>
+<body class="font-mono m-2">
+    <!-- Nav Bar -->
+    <section class="border grid grid-cols-4 gap-4 font-bold  text-center text-2xl bg-green-800 text-white">
+        <a href="/" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div><i class="fa-solid fa-seedling mr-2"></i>Tree Plantation</div></a>
+        <a href="/displaynode" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div>Nodes</div></a>
+        <a href="/mapit" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div>Map</div></a>
+        <a href="/apis" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div>APIs</div></a>
+    </section>
+    
+    
+    <section class="px-10">
+        <h1 class="text-center text-3xl my-4 font-bold text-green-600 p-2">Welcome to Tree Plantation API</h1>
+    
+        <h2 class="mt-10 text-2xl text-center uppercase font-bold underline mb-2">
+            Current Values
+        </h2>
+
+        <div class="grid grid-cols-3 bg-gray-200">
+            <div class="py-4 border text-center text-xl"><strong>Node:</strong> {{ latest_record['nodename'] }}</div>
+            <div class="py-4 border text-center text-xl"><strong>Height:</strong> {{ latest_record['height'] }} cm </div>
+            <div class="py-4 border text-center text-xl"><strong>Timestamp:</strong> {{ latest_record['timestamp'] }}</div>
+        </div>
+
+        <h2 class="mt-20 text-2xl text-center uppercase font-bold underline mb-2">
+            All Nodes
+        </h2>
+        <div class="grid grid-cols-2 gap-4 ">
+            {% for node in nodes %}
+            <a href="{{ url_for('display_node_data', nodename=node['nodename']) }}" class="py-4 border rounded-md shadow shadow-md shadow-indigo-300 text-center text-xl hover:bg-green-300">
+                <b>{{ node['nodename'] }}</b> <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+</body>
+</html>
