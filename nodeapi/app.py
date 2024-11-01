@@ -5,6 +5,9 @@ from flask import Flask, request, jsonify, render_template, redirect, url_for
 from datetime import datetime
 import folium
 
+# pip install flask
+# pip install folium
+
 domainUrl = "http://127.0.0.1:5000"
 
 app = Flask(__name__)
