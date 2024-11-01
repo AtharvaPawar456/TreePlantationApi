@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Edit Node Data List . Tree Plantation Api{% endblock %}
+{% block content %}
+
+    <div class="text-center text-2xl md:text-2xl my-4 font-bold text-green-600 p-2">Edit Node Data (Node List)</div>
+
+    <div class="grid grid-cols-2 bg-gray-200 text-xl md:text-2xl text-center uppercase font-bold">
+        <div class="py-4">Node</div>
+        <div class="py-4">Edit</div>
+    </div>
+
+    {% for node in nodes %}
+        <div class="grid grid-cols-2 text-center text-sm md:text-xl my-1">
+            <div>{{ node['nodename'] }}</div>
+            <div class="hover:underline hover:text-green-700 font-bold"><a href="/edit/{{ node['nodename'] }}"><i class="fa-solid fa-pen mr-2"></i>Edit</a></div>
+        </div>
+        <hr>
+    {% endfor %}
+    
+{% endblock %}

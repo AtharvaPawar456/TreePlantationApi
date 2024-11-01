@@ -5,6 +5,8 @@ from flask import Flask, request, jsonify, render_template, redirect, url_for
 from datetime import datetime
 import folium
 
+domainUrl = "http://127.0.0.1:5000"
+
 app = Flask(__name__)
 
 # Setup logging
@@ -70,13 +72,12 @@ def index():
                 unique_nodes[row['nodename']] = row['height']
 
         total_records = len(node_values)
-        log_action(logging.INFO, f"Accessed home page, total records: {total_records}")
+        # log_action(logging.INFO, f"Accessed home page, total records: {total_records}")
 
         return render_template('index.html', total_records=total_records, nodes=unique_nodes)
     except sqlite3.Error as e:
-        log_action(logging.ERROR, f"Database query failed: {e}")
+        # log_action(logging.ERROR, f"Database query failed: {e}")
         return "Error fetching node values", 500
-
 
 @app.route('/uploaddata', methods=['GET'])
 def upload_data():
@@ -104,22 +105,18 @@ def upload_data():
                     "INSERT INTO NodeData (nodename, latitude, longitude) VALUES (?, ?, ?)",
                     (nodename, 'empty', 'empty')
                 )
-                log_action(logging.INFO, f"New node {nodename} added to NodeData with empty lat/lon")
+                # log_action(logging.INFO, f"New node {nodename} added to NodeData with empty lat/lon")
             
             conn.commit()
             conn.close()
-            log_action(logging.INFO, f"Node {nodename} with height {height} added from IP {ip_address}")
+            # log_action(logging.INFO, f"Node {nodename} with height {height} added from IP {ip_address}")
             return f"nodename={nodename} and height={height} got saved"
         except sqlite3.Error as e:
-            log_action(logging.ERROR, f"Failed to insert data: {e}")
+            # log_action(logging.ERROR, f"Failed to insert data: {e}")
             return "Failed to save data", 500
     else:
-        log_action(logging.ERROR, "Missing parameters in /uploaddata request")
+        # log_action(logging.ERROR, "Missing parameters in /uploaddata request")
         return "Missing nodename or height", 400
-
-
-
-
 
 @app.route('/displaynode')
 def display_node():
@@ -129,10 +126,9 @@ def display_node():
     latest_record = conn.execute("SELECT * FROM NodeValues ORDER BY timestamp DESC LIMIT 1").fetchone()
     conn.close()
 
-    log_action(logging.INFO, "Accessed display node page")
+    # log_action(logging.INFO, "Accessed display node page")
 
     return render_template('display_nodes.html', nodes=unique_nodes, latest_record=latest_record)
-
 
 @app.route('/displaynode/<nodename>')
 def display_node_data(nodename):
@@ -142,10 +138,9 @@ def display_node_data(nodename):
     node_data = conn.execute("SELECT * FROM NodeData WHERE nodename = ?", (nodename,)).fetchone()
     conn.close()
 
-    log_action(logging.INFO, f"Displaying records for node {nodename}")
+    # log_action(logging.INFO, f"Displaying records for node {nodename}")
     
     return render_template('node_data.html', node_values=node_values, node_data=node_data)
-
 
 @app.route('/getnodejson/<nodename>')
 def get_node_json(nodename):
@@ -156,14 +151,13 @@ def get_node_json(nodename):
     latest_record = conn.execute("SELECT * FROM NodeValues WHERE nodename = ? ORDER BY timestamp DESC LIMIT 1", (nodename,)).fetchone()
     conn.close()
 
-    log_action(logging.INFO, f"Returned JSON data for node {nodename}")
+    # log_action(logging.INFO, f"Returned JSON data for node {nodename}")
 
     return jsonify({
         'node_values': [dict(row) for row in node_values],
         'node_data': dict(node_data) if node_data else {},
         'latest_record': dict(latest_record) if latest_record else {}
     })
-
 
 @app.route('/getnodelatestjson/<nodename>')
 def get_latest_node_json(nodename):
@@ -173,13 +167,12 @@ def get_latest_node_json(nodename):
     node_data = conn.execute("SELECT * FROM NodeData WHERE nodename = ?", (nodename,)).fetchone()
     conn.close()
 
-    log_action(logging.INFO, f"Returned latest JSON data for node {nodename}")
+    # log_action(logging.INFO, f"Returned latest JSON data for node {nodename}")
 
     return jsonify({
         'latest_record': dict(latest_record) if latest_record else {},
         'node_data': dict(node_data) if node_data else {}
     })
-
 
 @app.route('/edit')
 def edit():
@@ -188,12 +181,9 @@ def edit():
     unique_nodes = conn.execute("SELECT DISTINCT nodename FROM NodeData").fetchall()
     conn.close()
 
-    log_action(logging.INFO, "Accessed edit page")
+    # log_action(logging.INFO, "Accessed edit page")
 
-    return render_template('edit_nodes.html', nodes=unique_nodes)
-
-
-
+    return render_template('edit_List_nodes.html', nodes=unique_nodes)
 
 @app.route('/edit/<nodename>', methods=['GET', 'POST'])
 def edit_node_data(nodename):
@@ -206,16 +196,15 @@ def edit_node_data(nodename):
         conn.execute("UPDATE NodeData SET latitude = ?, longitude = ? WHERE nodename = ?", (latitude, longitude, nodename))
         conn.commit()
         conn.close()
-        log_action(logging.INFO, f"Node {nodename} updated with new data")
+        # log_action(logging.INFO, f"Node {nodename} updated with new data")
         return redirect(url_for('edit'))
 
     node_data = conn.execute("SELECT * FROM NodeData WHERE nodename = ?", (nodename,)).fetchone()
     conn.close()
 
-    log_action(logging.INFO, f"Accessed edit page for node {nodename}")
+    # log_action(logging.INFO, f"Accessed edit page for node {nodename}")
 
     return render_template('edit_node.html', node_data=node_data)
-
 
 @app.route('/mapit')
 def map_it():
@@ -227,17 +216,49 @@ def map_it():
     # Generate map
     tree_map = folium.Map(location=[19.0760, 72.8777], zoom_start=12)
     for node in node_data:
-        folium.Marker([node['latitude'], node['longitude']], popup=node['nodename']).add_to(tree_map)
+        try:
+            # Ensure latitude and longitude are not None
+            if node['latitude'] is not None and node['longitude'] is not None:
+                folium.Marker([node['latitude'], node['longitude']], popup=node['nodename']).add_to(tree_map)
+        except KeyError as e:
+            # log_action(logging.ERROR, f"Missing coordinate in node data: {e}")
+            print(e)
 
-    tree_map.save('templates/map.html')
-    log_action(logging.INFO, "Map generated and displayed")
+    # Render the map to an HTML string
+    map_html = tree_map._repr_html_()  # Get the HTML representation of the map
+    # log_action(logging.INFO, "Map generated and rendered as HTML")
 
-    return render_template('map.html')
+    return render_template('map.html', map_html=map_html)
+
+@app.route('/getmap')
+def getmap():
+    """Map all nodes using folium"""
+    conn = get_db_connection()
+    node_data = conn.execute("SELECT * FROM NodeData").fetchall()
+    conn.close()
+
+    # Generate map
+    tree_map = folium.Map(location=[19.0760, 72.8777], zoom_start=12)
+    for node in node_data:
+        try:
+            # Ensure latitude and longitude are not None
+            if node['latitude'] is not None and node['longitude'] is not None:
+                folium.Marker([node['latitude'], node['longitude']], popup=node['nodename']).add_to(tree_map)
+        except KeyError as e:
+            # log_action(logging.ERROR, f"Missing coordinate in node data: {e}")
+            print(e)
+
+    tree_map.save('templates/getmap.html')
+    # log_action(logging.INFO, "Map generated and displayed")
+
+    return render_template('getmap.html')
 
 @app.route('/apis')
 def apis():
-    return render_template('apis.html')
+    # log_action(logging.INFO, "Display Api Page")
+
+    return render_template('apis.html', domainUrl=domainUrl)
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)

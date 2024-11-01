@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="{{ url_for('static', filename='treeLogo.jpeg') }}" type="image/jpeg">  <!-- Favicon -->
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+    {% block head %}{% endblock %} 
+    {% block mystyle %}{% endblock %} 
+
+
+    <title>{% block title %}Default Title{% endblock %}</title>
+</head>
+<body class="font-mono m-2">
+    <!-- Nav Bar -->
+    <section class="border grid grid-cols-4 gap-4 font-bold  text-center text-md md:text-2xl bg-green-800 text-white">
+        <a href="/" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div><i class="fa-solid fa-seedling mr-2"></i>Tree Plantation</div></a>
+        <a href="/displaynode" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div>Nodes</div></a>
+        <a href="/mapit" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div>Map</div></a>
+        <a href="/apis" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div>APIs</div></a>
+    </section>
+    
+    <main>{% block content %}Content goes here{% endblock %}</main>
+
+    <!-- <footer>{% block footer %}Footer Area{% endblock %}</footer> -->
+
+    <footer class="bg-green-800 text-white py-8 mt-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="">
+                    <h3 class="text-lg font-bold mb-4">Useful Links</h3>
+                    <ul>
+                        <li><a href="/" class="hover:underline">Home</a></li>
+                        <li><a href="/displaynode" class="hover:underline">Display Nodes</a></li>
+                        <li><a href="/mapit" class="hover:underline">Map Visualization</a></li>
+                        <li><a href="/apis" class="hover:underline">API Documentation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4 ">About Us</h3>
+                    <p>We are dedicated to promoting tree plantation and environmental sustainability through innovative technology and data management.</p>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <p>Email: <a href="mailto:talktoatharva14@gmail.com" class="hover:underline">talktoatharva14@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890" class="hover:underline">+91 81692 39027</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-green-900 py-4">
+            <div class="container mx-auto text-center">
+                <p class="text-sm">© 2024 Tree Plantation API. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

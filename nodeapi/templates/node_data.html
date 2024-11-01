@@ -1,37 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "base.html" %}
+{% block title %}Node Data - {{ node_data['nodename'] }} . Tree Plantation Api{% endblock %}
+{% block mystyle %}
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>
+    table {
+        width: 70%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    table, th, td {
+        border: 1px solid black;
+    }
+    th, td {
+        padding: 8px;
+        text-align: center;
+    }
+</style>
 
-    <title>Node Data - {{ node_data['nodename'] }} . Tree Plantation Api</title>
+{% endblock %} 
 
-    <style>
-        table {
-            width: 70%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 8px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <!-- Nav Bar -->
-    <section class="border grid grid-cols-4 gap-4 font-bold  text-center text-2xl bg-green-800 text-white">
-        <a href="/" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div><i class="fa-solid fa-seedling mr-2"></i>Tree Plantation</div></a>
-        <a href="/displaynode" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div>Nodes</div></a>
-        <a href="/mapit" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div>Map</div></a>
-        <a href="/apis" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div>APIs</div></a>
-    </section>
+
+{% block content %}
+
+
+    
 
     <section class="px-10">
         <h1 class="text-center text-3xl my-4 font-bold text-green-600 p-2">
@@ -48,25 +40,25 @@
         </div>
     
 
-    <h2 class="mt-20 text-2xl text-center uppercase font-bold underline mb-2">
-        Node Values
-    </h2>
-    
-    <div class="grid grid-cols-3 bg-gray-200 text-2xl text-center uppercase font-bold">
-        <div class="py-4">Timestamp</div>
-        <div class="py-4">Height (cm)</div>
-        <div class="py-4">IP Address</div>
-    </div>
+        <h2 class="mt-20 text-2xl text-center uppercase font-bold underline mb-2">
+            Node Values
+        </h2>
         
-        {% for record in node_values %}
-            <div class="grid grid-cols-3 text-center">
-                <div>{{ record['timestamp'] }}</div>
-                <div>{{ record['height'] }}</div>
-                <div>{{ record['ipaddress'] }}</div>
-            </div>
-        {% endfor %}
+        <div class="grid grid-cols-3 bg-gray-200 text-2xl text-center uppercase font-bold">
+            <div class="py-4">Timestamp</div>
+            <div class="py-4">Height (cm)</div>
+            <div class="py-4">IP Address</div>
+        </div>
+            
+            {% for record in node_values %}
+                <div class="grid grid-cols-3 text-center">
+                    <div>{{ record['timestamp'] }}</div>
+                    <div>{{ record['height'] }}</div>
+                    <div>{{ record['ipaddress'] }}</div>
+                </div>
+            {% endfor %}
 
+        
+    </section>
     
-</section>
-</body>
-</html>
+{% endblock %}

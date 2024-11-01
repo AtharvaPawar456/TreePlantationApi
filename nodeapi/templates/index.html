@@ -1,36 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <title>Home . Tree Plantation Api</title>
-</head>
-<body class="font-mono m-2">
-    <!-- Nav Bar -->
-    <section class="border grid grid-cols-4 gap-4 font-bold  text-center text-2xl bg-green-800 text-white">
-        <a href="/" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div><i class="fa-solid fa-seedling mr-2"></i>Tree Plantation</div></a>
-        <a href="/displaynode" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div>Nodes</div></a>
-        <a href="/mapit" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div>Map</div></a>
-        <a href="/apis" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div>APIs</div></a>
-    </section>
+{% extends "base.html" %}
+{% block title %}Home . Tree Plantation Api{% endblock %}
+{% block content %}
 
     <section class="">
         <h1 class="text-center text-3xl my-4 font-bold text-green-600 p-2">Welcome to Tree Plantation API</h1>
         <p class="p-2 text-center text-xl">Total records: {{total_records}}</p>
         
-        <h2 class="mt-10 text-2xl text-center uppercase font-bold underline">Current updated values for each unique nodename</h2>
-        <ul class="grid grid-cols-2 gap-4 p-4">
+        <h2 class="mt-4 md:mt-10 text-xl md:text-2xl text-center uppercase font-bold underline">Current updated values for each unique nodename</h2>
+        <ul class="grid grid-cols-2 md:grid-cols-4 gap-4 p-1 md:p-4">
             {% for nodename, height in nodes.items() %}
-              <li class="text-xl bg-green-200 border rounded-md shadow shadow-green-200 py-4 text-center">
-                <b>{{ nodename }}</b> : {{ height }} cms</li>
+                <a href="/displaynode/{{ nodename }}">
+                    <li class="text-md md:text-xl bg-green-200 border rounded-md shadow shadow-green-200 py-4 text-center">
+                        <b>{{ nodename }}</b> <br> {{ height }} cms</li>
+                </a>
             {% endfor %}
         </ul>
-
     </section>
           
-</body>
-</html>
+{% endblock %}

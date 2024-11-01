@@ -1,0 +1,290 @@
+# base.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}Default Title{% endblock %}</title>
+</head>
+<body>
+    <header>{% block header %}Header Area{% endblock %}</header>
+    <main>{% block content %}Content goes here{% endblock %}</main>
+    <footer>{% block footer %}Footer Area{% endblock %}</footer>
+</body>
+</html>
+
+
+# home.html
+
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+    <h1>Welcome to the Home Page</h1>
+    <p>This is the home page content.</p>
+{% endblock %}
+
+
+# For loop:
+
+<ul>
+{% for item in items %}
+    <li>{{ item }}</li>
+{% endfor %}
+</ul>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+    {% for user in users %}
+    <tr>
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+
+# Conditional Display 
+
+{% if user.is_logged_in %}
+    <p>Welcome, {{ user.username }}!</p>
+{% else %}
+    <p>Please log in to access your account.</p>
+{% endif %}
+
+# Conditional Alert Box
+
+{% if alert %}
+    <div class="alert alert-{{ alert.type }}">
+        {{ alert.message }}
+    </div>
+{% endif %}
+
+
+# Dynamic Success/Error Messages
+
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-{{ message.category }}">
+            {{ message.text }}
+        </div>
+    {% endfor %}
+{% endif %}
+
+
+# Form with Error Display
+
+<form action="/submit" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" value="{{ form.username }}">
+    {% if errors.username %}
+        <div class="error">{{ errors.username }}</div>
+    {% endif %}
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" value="{{ form.email }}">
+    {% if errors.email %}
+        <div class="error">{{ errors.email }}</div>
+    {% endif %}
+    <button type="submit">Submit</button>
+</form>
+
+
+
+# Product List with Price Filter
+
+<ul>
+{% for product in products %}
+    <li>{{ product.name }} - ${{ product.price|floatformat:2 }}</li>
+{% endfor %}
+</ul>
+
+# Basic HTML Form
+
+<form action="/submit" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <button type="submit">Submit</button>
+</form>
+
+# Loop Through Form Fields
+
+<form action="/submit" method="post">
+{% for field in form_fields %}
+    <label for="{{ field.id }}">{{ field.label }}</label>
+    <input type="{{ field.type }}" id="{{ field.id }}" name="{{ field.name }}">
+{% endfor %}
+    <button type="submit">Submit</button>
+</form>
+
+# Macro for a Reusable Button
+
+{% macro button(text, link) %}
+    <a href="{{ link }}" class="button">{{ text }}</a>
+{% endmacro %}
+
+{{ button('Click Me', '/home') }}
+
+
+# Date Formatting
+
+<p>Today’s date: {{ date|date('Y-m-d') }}</p>
+
+# Uppercase Lowercase Filter
+
+<p>{{ text|upper }}</p>
+<p>{{ text|lower }}</p>
+<p>{{ text|title }}</p>
+
+<p>{{ text|capitalize }}</p>
+<p>{{ text|center(20, '*') }}</p>
+<p>{{ text|replace("old", "new") }}</p>
+<p>{{ text|trim }}</p>
+<p>{{ text|slice(0, 5) }}</p> <!-- First 5 characters -->
+<p>Length: {{ text|length }}</p>
+<p>Price: {{ price|floatformat:2 }}</p>
+<p>{{ number|floatformat:1 }}%</p>
+<p>Rounded: {{ number|round }}</p>
+<p>{{ date|date("Y-m-d") }}</p>
+<p>{{ timestamp|timesince }}</p>
+<p>{{ date|time }}</p>
+<p>{{ date|date("l") }}</p> <!-- E.g., 'Monday' -->
+<p>{{ date|date("d-m-Y H:i") }}</p> <!-- E.g., '21-10-2023 15:30' -->
+<p>{{ items|sort }}</p>
+<p>{{ items|reverse }}</p>
+<p>{{ items|join(", ") }}</p>
+<p>{{ items|unique }}</p>
+<p>{{ items|default("No items available") }}</p>
+<p>{{ num1 + num2 }}</p>
+<p>{{ text|linebreaks }}</p>
+<pre>{{ text|wordwrap(50) }}</pre>
+<p>{{ text|truncate(30) }}</p> <!-- Truncates to 30 characters -->
+<p>{{ text|slugify }}</p>
+<p>{{ user.email|default("No email provided") }}</p>
+<p>{{ text|escape }}</p>     <!-- Escape HTML Characters -->
+<p>{{ htmlContent|striptags }}</p>     <!-- Remove Tags from HTML -->
+<p>{{ htmlContent|safe }}</p>
+<p>{{ items|length }} item{{ items|length|pluralize }}</p>
+
+
+<script>
+    const data = {{ data|tojson }};
+    console.log(data);
+</script>
+
+
+
+# Nested Loops for Categories and Products
+
+{% for category, products in catalog.items() %}
+    <h2>{{ category }}</h2>
+    <ul>
+    {% for product in products %}
+        <li>{{ product.name }} - ${{ product.price|floatformat:2 }}</li>
+    {% endfor %}
+    </ul>
+{% endfor %}
+
+
+# Pagination with Conditional Links
+
+<div class="pagination">
+    {% if page > 1 %}
+        <a href="?page={{ page - 1 }}">Previous</a>
+    {% endif %}
+    <span>Page {{ page }}</span>
+    {% if page < total_pages %}
+        <a href="?page={{ page + 1 }}">Next</a>
+    {% endif %}
+</div>
+
+# Adding Dynamic Styles
+
+<style>
+.banner {
+    background-color: {{ banner_color }};
+    color: {{ text_color }};
+}
+</style>
+
+
+# Table with Sorting
+
+<table>
+    <thead>
+        <tr>
+            <th><a href="?sort=id">ID</a></th>
+            <th><a href="?sort=name">Name</a></th>
+            <th><a href="?sort=email">Email</a></th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for user in users %}
+        <tr>
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+
+# Base Template with Sidebar
+
+{% block sidebar %}
+    <div class="sidebar">
+        <ul>
+        {% for link in sidebar_links %}
+            <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
+
+
+# Error Message Handling
+
+{% if error_message %}
+    <div class="error">{{ error_message }}</div>
+{% endif %}
+
+
+# Macro for a Reusable Card Component
+
+{% macro card(title, content, footer) %}
+<div class="card">
+    <h3>{{ title }}</h3>
+    <p>{{ content }}</p>
+    <footer>{{ footer }}</footer>
+</div>
+{% endmacro %}
+
+
+# Condition in class
+
+<div class="alert {% if isError %}alert-danger{% else %}alert-success{% endif %}">
+    {{ message }}
+</div>
+
+<div class="card 
+    {% if isActive %} active{% endif %}
+    {% if isFeatured %} featured{% endif %}
+    {% if isHidden %} hidden{% endif %}">
+    Card Content
+</div>
+
+
+<div class="{{ ['card', 'active' if isActive else '', 'featured' if isFeatured else ''] | join(' ') }}">
+    Card Content
+</div>
+
+
+<div class="status
+    {% if status == 'success' %} text-success bg-success{% elif status == 'warning' %} text-warning bg-warning{% elif status == 'error' %} text-danger bg-danger{% else %} text-muted bg-light{% endif %}">
+    Status Message
+</div>
