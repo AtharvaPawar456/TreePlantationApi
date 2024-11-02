@@ -25,37 +25,38 @@
 
     
 
-    <section class="px-10">
-        <h1 class="text-center text-3xl my-4 font-bold text-green-600 p-2">
+    <section class="md:px-10">
+        <h1 class="text-center text-md md:text-3xl my-4 font-bold text-green-600 p-2">
             Data for Node: {{ node_data['nodename'] }}
         </h1>
 
-        <h2 class="mt-10 text-2xl text-center uppercase font-bold underline mb-2">
+        <h2 class="mt-2 md:mt-10 text-xl md:text-2xl text-center uppercase font-bold underline mb-2">
             Node Information
         </h2>
 
-        <div class="grid grid-cols-2 bg-gray-200">
-            <div class="py-4 border text-center text-xl"><strong>Latitude:</strong> {{ node_data['latitude'] }}</div>
-            <div class="py-4 border text-center text-xl"><strong>Longitude:</strong> {{ node_data['longitude'] }} cm </div>
+        <div class="grid grid-cols-2 bg-gray-200 rounded-md">
+            <div class="py-4 border text-center text-md md:text-xl"><strong>Latitude:</strong>  <br>{{ node_data['latitude'] }}</div>
+            <div class="py-4 border text-center text-md md:text-xl"><strong>Longitude:</strong> <br>{{ node_data['longitude'] }}</div>
         </div>
     
 
-        <h2 class="mt-20 text-2xl text-center uppercase font-bold underline mb-2">
+        <h2 class="mt-4 md:mt-20 text-xl md:text-2xl text-center uppercase font-bold underline mb-2">
             Node Values
         </h2>
         
-        <div class="grid grid-cols-3 bg-gray-200 text-2xl text-center uppercase font-bold">
+        <div class="grid grid-cols-3 bg-gray-200 text-md md:text-2xl text-center uppercase font-bold">
             <div class="py-4">Timestamp</div>
             <div class="py-4">Height (cm)</div>
             <div class="py-4">IP Address</div>
         </div>
             
             {% for record in node_values %}
-                <div class="grid grid-cols-3 text-center">
+                <div class="grid grid-cols-3 text-center text-sm">
                     <div>{{ record['timestamp'] }}</div>
                     <div>{{ record['height'] }}</div>
                     <div>{{ record['ipaddress'] }}</div>
                 </div>
+                <hr>
             {% endfor %}
 
         

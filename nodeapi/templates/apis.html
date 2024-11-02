@@ -6,20 +6,20 @@
     <h1 class="text-center text-3xl my-4 font-bold text-green-600 p-2">Welcome to Tree Plantation API</h1>
     
     <h2 class="mt-10 text-2xl text-center uppercase font-bold underline">API Overview</h2>
-    <p class="text-center mb-6">This API allows you to interact with tree plantation data, including uploading node data, retrieving current values, and accessing detailed node information.</p>
+    <p class="text-justify mb-6">This API allows you to interact with tree plantation data, including uploading node data, retrieving current values, and accessing detailed node information.</p>
 
     <h2 class="mt-10 text-2xl text-center uppercase font-bold underline mb-8">Available Endpoints</h2>
     
     <div class="mb-4 md:mb-8 md:mx-20 p-2 md:p-8 border border-2 border-green-300 rounded-md shadow shadow-md shadow-green-300">
         <h3 class="text-xl font-semibold">1. Home Endpoint</h3>
-        <p class="p-2 border rounded-md bg-gray-200"><strong>URL:</strong> <code>{{domainUrl}}/</code></p>
+        <p class="p-2 border rounded-md bg-gray-200 text-sm md:text-md break-words whitespace-normal"><strong>URL:</strong> <code>{{domainUrl}}/</code></p>
         <p><strong>Method:</strong> GET</p>
         <p><strong>Description:</strong> Displays the total records and current values of each unique node.</p>
     </div>
 
     <div class="mb-4 md:mb-8 md:mx-20 p-2 md:p-8 border border-2 border-green-300 rounded-md shadow shadow-md shadow-green-300">
         <h3 class="text-xl font-semibold">2. Upload Data</h3>
-        <p class="p-2 border rounded-md bg-gray-200"><strong>URL:</strong> <code>{{domainUrl}}/uploaddata</code></p>
+        <p class="p-2 border rounded-md bg-gray-200 text-sm md:text-md break-words whitespace-normal"><strong>URL:</strong> <code>{{domainUrl}}/uploaddata</code></p>
         <p><strong>Method:</strong> GET</p>
         <p><strong>Parameters:</strong></p>
         <ul>
@@ -27,58 +27,60 @@
             <li><strong>height:</strong> The height of the node.</li>
         </ul>
         <p><strong>Description:</strong> Inserts node data along with the IP address and initializes empty latitude and longitude for new nodes.</p>
-        <p class="p-2 border rounded-md bg-gray-200"><strong>Example:</strong> <code>{{domainUrl}}/uploaddata?nodename=Tree1&height=10</code></p>
+        <p class="p-2 border rounded-md bg-gray-200 text-sm md:text-md break-words whitespace-normal"><strong>Example:</strong> <code>{{domainUrl}}/uploaddata?nodename=Tree1&height=10</code></p>
     </div>
 
     <div class="mb-4 md:mb-8 md:mx-20 p-2 md:p-8 border border-2 border-green-300 rounded-md shadow shadow-md shadow-green-300">
         <h3 class="text-xl font-semibold">3. Display Node Data</h3>
-        <p class="p-2 border rounded-md bg-gray-200"><strong>URL:</strong> <code>{{domainUrl}}/displaynode</code></p>
+        <p class="p-2 border rounded-md bg-gray-200 text-sm md:text-md break-words whitespace-normal"><strong>URL:</strong> <code>{{domainUrl}}/displaynode</code></p>
         <p><strong>Method:</strong> GET</p>
         <p><strong>Description:</strong> Displays all nodes and their details with a periodic refresh.</p>
     </div>
 
+    
+
     <div class="mb-4 md:mb-8 md:mx-20 p-2 md:p-8 border border-2 border-green-300 rounded-md shadow shadow-md shadow-green-300">
         <h3 class="text-xl font-semibold">4. Node Details</h3>
-        <p class="p-2 border rounded-md bg-gray-200"><strong>URL:</strong> <code>{{domainUrl}}/displaynode/&lt;nodename&gt;</code></p>
+        <p class="p-2 border rounded-md bg-gray-200 text-sm md:text-md break-words whitespace-normal"><strong>URL:</strong> <code>{{domainUrl}}/displaynode/&lt;nodename&gt;</code></p>
         <p><strong>Method:</strong> GET</p>
         <p><strong>Description:</strong> Displays all records for a specific node.</p>
-        <p class="p-2 border rounded-md bg-gray-200"><strong>Example:</strong> <code>{{domainUrl}}/displaynode/Tree1</code></p>
+        <p class="p-2 border rounded-md bg-gray-200 text-sm md:text-md break-words whitespace-normal"><strong>Example:</strong> <code>{{domainUrl}}/displaynode/Tree1</code></p>
     </div>
 
     <div class="mb-4 md:mb-8 md:mx-20 p-2 md:p-8 border border-2 border-green-300 rounded-md shadow shadow-md shadow-green-300">
         <h3 class="text-xl font-semibold">5. JSON Node Data</h3>
-        <p class="p-2 border rounded-md bg-gray-200"><strong>URL:</strong> <code>{{domainUrl}}/getnodejson/&lt;nodename&gt;</code></p>
+        <p class="p-2 border rounded-md bg-gray-200 text-sm md:text-md break-words whitespace-normal"><strong>URL:</strong> <code>{{domainUrl}}/getnodejson/&lt;nodename&gt;</code></p>
         <p><strong>Method:</strong> GET</p>
         <p><strong>Description:</strong> Returns all node data in JSON format.</p>
-        <p class="p-2 border rounded-md bg-gray-200"><strong>Example:</strong> <code>{{domainUrl}}/getnodejson/Tree1</code></p>
+        <p class="p-2 border rounded-md bg-gray-200 text-sm md:text-md break-words whitespace-normal"><strong>Example:</strong> <code>{{domainUrl}}/getnodejson/Tree1</code></p>
     </div>
 
     <div class="mb-4 md:mb-8 md:mx-20 p-2 md:p-8 border border-2 border-green-300 rounded-md shadow shadow-md shadow-green-300">
         <h3 class="text-xl font-semibold">6. Latest Node JSON</h3>
-        <p class="p-2 border rounded-md bg-gray-200"><strong>URL:</strong> <code>{{domainUrl}}/getnodelatestjson/&lt;nodename&gt;</code></p>
+        <p class="p-2 border rounded-md bg-gray-200 text-sm md:text-md break-words whitespace-normal"><strong>URL:</strong> <code>{{domainUrl}}/getnodelatestjson/&lt;nodename&gt;</code></p>
         <p><strong>Method:</strong> GET</p>
         <p><strong>Description:</strong> Returns the latest node record in JSON format.</p>
-        <p class="p-2 border rounded-md bg-gray-200"><strong>Example:</strong> <code>{{domainUrl}}/getnodelatestjson/Tree1</code></p>
+        <p class="p-2 border rounded-md bg-gray-200 text-sm md:text-md break-words whitespace-normal"><strong>Example:</strong> <code>{{domainUrl}}/getnodelatestjson/Tree1</code></p>
     </div>
 
     <div class="mb-4 md:mb-8 md:mx-20 p-2 md:p-8 border border-2 border-green-300 rounded-md shadow shadow-md shadow-green-300">
         <h3 class="text-xl font-semibold">7. Edit Node Data</h3>
-        <p class="p-2 border rounded-md bg-gray-200"><strong>URL:</strong> <code>{{domainUrl}}/edit/&lt;nodename&gt;</code></p>
+        <p class="p-2 border rounded-md bg-gray-200 text-sm md:text-md break-words whitespace-normal"><strong>URL:</strong> <code>{{domainUrl}}/edit/&lt;nodename&gt;</code></p>
         <p><strong>Method:</strong> GET/POST</p>
         <p><strong>Description:</strong> Displays a form to edit latitude and longitude for the specified node.</p>
-        <p class="p-2 border rounded-md bg-gray-200"><strong>Example:</strong> <code>{{domainUrl}}/edit/Tree1</code></p>
+        <p class="p-2 border rounded-md bg-gray-200 text-sm md:text-md break-words whitespace-normal"><strong>Example:</strong> <code>{{domainUrl}}/edit/Tree1</code></p>
     </div>
 
     <div class="mb-4 md:mb-8 md:mx-20 p-2 md:p-8 border border-2 border-green-300 rounded-md shadow shadow-md shadow-green-300">
         <h3 class="text-xl font-semibold">8. Map Visualization</h3>
-        <p class="p-2 border rounded-md bg-gray-200"><strong>URL:</strong> <code>{{domainUrl}}/mapit</code></p>
+        <p class="p-2 border rounded-md bg-gray-200 text-sm md:text-md break-words whitespace-normal"><strong>URL:</strong> <code>{{domainUrl}}/mapit</code></p>
         <p><strong>Method:</strong> GET</p>
         <p><strong>Description:</strong> Generates a map showing the locations of all nodes using Folium.</p>
     </div>
 
     <div class="mb-4 md:mb-8 md:mx-20 p-2 md:p-8 border border-2 border-green-300 rounded-md shadow shadow-md shadow-green-300">
         <h3 class="text-xl font-semibold">9. Display Map Visualization on your website using iframe tag</h3>
-        <p class="p-2 border rounded-md bg-gray-200">
+        <p class="p-2 border rounded-md bg-gray-200 text-sm md:text-md break-words whitespace-normal">
             <a href="{{domainUrl}}/getmap" target="_blank" class="hover:bg-indigo-400 hover:text-white p-2 rounded-md"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             <strong>URL:</strong> <code>{{domainUrl}}/getmap</code></p>
         <p><strong>Method:</strong> GET</p>
@@ -86,7 +88,7 @@
     </div>
 
     <h2 class="mt-10 text-2xl text-center uppercase font-bold underline">How to Use</h2>
-    <p class="text-center mb-6">You can use these endpoints by making GET requests through your web browser or using tools like <a href="https://www.postman.com/" target="_blank" class="text-blue-600">Postman</a>. Ensure to provide the required parameters where necessary.</p>
+    <p class="text-justify mb-6">You can use these endpoints by making GET requests through your web browser or using tools like <a href="https://www.postman.com/" target="_blank" class="text-blue-600">Postman</a>. Ensure to provide the required parameters where necessary.</p>
 
 </section>
 

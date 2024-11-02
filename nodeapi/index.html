@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="icon" href="{{ url_for('static', filename='treeLogo.jpeg') }}" type="image/jpeg">  <!-- Favicon -->
@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 
-    {% block head %}{% endblock %} 
-    {% block mystyle %}{% endblock %} 
+    <!-- {% block head %}{% endblock %} 
+    {% block mystyle %}{% endblock %}  -->
 
 
-    <title>{% block title %}Default Title{% endblock %}</title>
+    <!-- <title>{% block title %}Default Title{% endblock %}</title> -->
 </head>
 <body class="font-mono m-2">
     <!-- Nav Bar -->
@@ -27,7 +27,7 @@
         <a href="/apis" class="p-2 hover:underline hover:bg-green-300 hover:text-black"><div>APIs</div></a>
     </section>
     
-    <main>{% block content %}Content goes here{% endblock %}</main>
+    <!-- <main>{% block content %}Content goes here{% endblock %}</main> -->
 
     <!-- <footer>{% block footer %}Footer Area{% endblock %}</footer> -->
 
@@ -45,7 +45,7 @@
                 </div>
                 <div>
                     <h3 class="text-lg font-bold mb-4 ">About Us</h3>
-                    <p class="text-justify">We are dedicated to promoting tree plantation and environmental sustainability through innovative technology and data management.</p>
+                    <p>We are dedicated to promoting tree plantation and environmental sustainability through innovative technology and data management.</p>
                 </div>
                 <div class="text-center">
                     <h3 class="text-lg font-bold mb-4">Follow Us</h3>

@@ -29,7 +29,7 @@
         <h2 class="mt-20 text-2xl text-center uppercase font-bold mb-2">
             <p class="underline inline">All Nodes</p> <a href="/edit" class="p-1 border rounded-md bg-green-200 hover:bg-green-600 hover:text-white">Edit Node</a>
         </h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm md:text-xl">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm md:text-xl">
             {% for node in nodes %}
             <a href="{{ url_for('display_node_data', nodename=node['nodename']) }}" class="py-4 border rounded-md shadow shadow-md shadow-indigo-300 text-center hover:bg-green-300">
                 <b>{{ node['nodename'] }}</b> <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>

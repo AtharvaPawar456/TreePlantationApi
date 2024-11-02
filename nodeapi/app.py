@@ -264,4 +264,11 @@ def apis():
 
 
 if __name__ == '__main__':
+    # app.run(host="0.0.0.0", port="5001" , debug=True)
+    # app.run(host="192.168.1.102", port="5000" , debug=True)
     app.run(debug=False)
+
+
+    '''
+    flask run -h 192.168.1.102
+    '''

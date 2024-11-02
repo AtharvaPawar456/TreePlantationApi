@@ -3,11 +3,11 @@
 {% block content %}
 
     <section class="">
-        <h1 class="text-center text-3xl my-4 font-bold text-green-600 p-2">Welcome to Tree Plantation API</h1>
+        <h1 class="text-center text-2xl md:text-3xl my-4 font-bold text-green-600 p-2">Welcome to Tree Plantation API</h1>
         <p class="p-2 text-center text-xl">Total records: {{total_records}}</p>
         
-        <h2 class="mt-4 md:mt-10 text-xl md:text-2xl text-center uppercase font-bold underline">Current updated values for each unique nodename</h2>
-        <ul class="grid grid-cols-2 md:grid-cols-4 gap-4 p-1 md:p-4">
+        <h2 class="mt-4 md:mt-10 text-md md:text-2xl text-center uppercase font-bold underline">Current updated values for each unique nodename</h2>
+        <ul class="grid grid-cols-2 md:grid-cols-4 gap-2 p-1 md:p-4">
             {% for nodename, height in nodes.items() %}
                 <a href="/displaynode/{{ nodename }}">
                     <li class="text-md md:text-xl bg-green-200 border rounded-md shadow shadow-green-200 py-4 text-center">

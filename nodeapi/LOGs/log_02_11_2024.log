@@ -1,0 +1,322 @@
+INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.102:5001
+INFO | [33mPress CTRL+C to quit[0m
+INFO |  * Restarting with watchdog (windowsapi)
+WARNING |  * Debugger is active!
+INFO |  * Debugger PIN: 566-369-563
+INFO | 192.168.1.102 - - [02/Nov/2024 09:50:11] "GET / HTTP/1.1" 200 -
+INFO | 192.168.1.102 - - [02/Nov/2024 09:50:13] "GET / HTTP/1.1" 200 -
+INFO | 192.168.1.102 - - [02/Nov/2024 09:50:13] "GET /static/treeLogo.jpeg HTTP/1.1" 200 -
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Restarting with watchdog (windowsapi)
+WARNING |  * Debugger is active!
+INFO |  * Debugger PIN: 566-369-563
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Restarting with watchdog (windowsapi)
+INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.1.102:5001
+INFO | [33mPress CTRL+C to quit[0m
+INFO |  * Restarting with watchdog (windowsapi)
+WARNING |  * Debugger is active!
+INFO |  * Debugger PIN: 566-369-563
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Restarting with watchdog (windowsapi)
+WARNING |  * Debugger is active!
+INFO |  * Debugger PIN: 566-369-563
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Restarting with watchdog (windowsapi)
+WARNING |  * Debugger is active!
+INFO |  * Debugger PIN: 566-369-563
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Restarting with watchdog (windowsapi)
+WARNING |  * Debugger is active!
+INFO |  * Debugger PIN: 566-369-563
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Restarting with watchdog (windowsapi)
+WARNING |  * Debugger is active!
+INFO |  * Debugger PIN: 566-369-563
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Restarting with watchdog (windowsapi)
+WARNING |  * Debugger is active!
+INFO |  * Debugger PIN: 566-369-563
+INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.102:5000
+INFO | [33mPress CTRL+C to quit[0m
+INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.102:5000
+INFO | [33mPress CTRL+C to quit[0m
+INFO | 192.168.1.102 - - [02/Nov/2024 10:00:27] "GET / HTTP/1.1" 200 -
+INFO | 192.168.1.102 - - [02/Nov/2024 10:00:28] "GET / HTTP/1.1" 200 -
+INFO | 192.168.1.102 - - [02/Nov/2024 10:00:29] "GET /static/treeLogo.jpeg HTTP/1.1" 200 -
+INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.102:5000
+INFO | [33mPress CTRL+C to quit[0m
+INFO |  * Restarting with watchdog (windowsapi)
+WARNING |  * Debugger is active!
+INFO |  * Debugger PIN: 566-369-563
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\getIps.py', reloading
+INFO |  * Restarting with watchdog (windowsapi)
+WARNING |  * Debugger is active!
+INFO |  * Debugger PIN: 566-369-563
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\packet.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\asn1fields.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\asn1packet.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\utils.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\route.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\sendrecv.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\sessions.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\supersocket.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\volatile.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\as_resolvers.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\automaton.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\autorun.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\main.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\consts.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\layers\\all.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\asn1\\asn1.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\asn1\\ber.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\scapy\\asn1\\mib.py', reloading
+INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO | [33mPress CTRL+C to quit[0m
+INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.102:5000
+INFO | [33mPress CTRL+C to quit[0m
+INFO |  * Restarting with watchdog (windowsapi)
+WARNING |  * Debugger is active!
+INFO |  * Debugger PIN: 566-369-563
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Restarting with watchdog (windowsapi)
+INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO | [33mPress CTRL+C to quit[0m
+INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO | [33mPress CTRL+C to quit[0m
+INFO | 127.0.0.1 - - [02/Nov/2024 10:14:40] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:14:42] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:14:42] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:14:55] "GET / HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:14:57] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:16:02] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:16:02] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:16:03] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:16:06] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:16:07] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:16:07] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:16:15] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:16:16] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:16:16] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:16:18] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:16:18] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:16:19] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:16:59] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:16:59] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:17:01] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:17:02] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:17:26] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:17:26] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO | [33mPress CTRL+C to quit[0m
+INFO |  * Restarting with watchdog (windowsapi)
+WARNING |  * Debugger is active!
+INFO |  * Debugger PIN: 566-369-563
+INFO | 127.0.0.1 - - [02/Nov/2024 10:17:44] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:17:44] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:18:41] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:18:41] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:18:56] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:18:56] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:20:33] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:20:33] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:21:25] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:21:25] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:22:15] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:22:15] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:22:25] "GET /apis HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:22:25] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:23:58] "GET /mapit HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:24:22] "GET /mapit HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:24:22] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:24:23] "GET /mapit HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:24:23] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:24:29] "GET /mapit HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:24:30] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:24:30] "GET /mapit HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:24:31] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:24:31] "GET /mapit HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:24:31] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:24:42] "GET /mapit HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:24:42] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:26:00] "GET /mapit HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:26:01] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:26:02] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:26:03] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:26:16] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:26:16] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:26:34] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:26:34] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:26:35] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:26:35] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:26:49] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:26:49] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:02] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:02] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:27] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:28] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:28] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:28] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:32] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:32] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:33] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:33] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:35] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:35] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:37] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:37] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:38] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:38] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:38] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:38] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:51] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:51] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:52] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:27:52] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:28:13] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:28:13] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:28:14] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:28:14] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:28:20] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:28:20] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:28:20] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:28:21] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:28:33] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:28:33] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:29:01] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:29:01] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:29:02] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:29:02] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:29:03] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:29:03] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:29:10] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:29:11] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:30:18] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:30:18] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:30:19] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:30:19] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:30:19] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:30:19] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:31:07] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:31:07] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:31:08] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:31:08] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:31:08] "GET /displaynode/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:31:09] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:31:20] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:31:22] "GET /edit HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:31:25] "GET /edit/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:31:56] "GET /edit/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:31:57] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:01] "GET /edit/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:01] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:01] "GET /edit/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:02] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:20] "GET /edit/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:20] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:21] "GET /edit/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:21] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:52] "GET /edit/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:52] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:52] "GET /edit/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:53] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:53] "GET /edit/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:53] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:53] "GET /edit/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:32:53] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:33:36] "GET /edit/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:33:36] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:33:36] "GET /edit/Node1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:33:37] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:33:48] "GET / HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:34:24] "GET / HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:34:55] "GET / HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:34:55] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:34:56] "GET / HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:34:56] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:09] "GET / HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:09] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:09] "GET / HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:10] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:10] "GET / HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:10] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:10] "GET / HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:10] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:13] "GET / HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:13] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:14] "GET / HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:14] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:24] "GET / HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:24] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:24] "GET / HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:24] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:29] "GET /displaynode/Tree1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:32] "GET / HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:33] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:53] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:35:53] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:14] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:14] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:15] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:15] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:15] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:15] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:16] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:16] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:17] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:17] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:17] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:17] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:17] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:17] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:17] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:38] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:38] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:46] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:46] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:46] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:36:47] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\getIps.py', reloading
+INFO |  * Restarting with watchdog (windowsapi)
+WARNING |  * Debugger is active!
+INFO |  * Debugger PIN: 566-369-563
+INFO | 127.0.0.1 - - [02/Nov/2024 10:37:07] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:37:07] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Detected change in 'C:\\Users\\Atharva Pawar\\Documents\\GitHub\\TreePlantationApi\\nodeapi\\app.py', reloading
+INFO |  * Restarting with watchdog (windowsapi)
+INFO | 127.0.0.1 - - [02/Nov/2024 10:37:28] "GET /displaynode HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2024 10:37:28] "[36mGET /static/treeLogo.jpeg HTTP/1.1[0m" 304 -
