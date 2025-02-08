@@ -145,37 +145,6 @@ def display_node_data(nodename):
     
     return render_template('node_data.html', node_values=node_values, node_data=node_data)
 
-@app.route('/getnodejson/<nodename>')
-def get_node_json(nodename):
-    """Return node data in JSON format"""
-    conn = get_db_connection()
-    node_values = conn.execute("SELECT * FROM NodeValues WHERE nodename = ?", (nodename,)).fetchall()
-    node_data = conn.execute("SELECT * FROM NodeData WHERE nodename = ?", (nodename,)).fetchone()
-    latest_record = conn.execute("SELECT * FROM NodeValues WHERE nodename = ? ORDER BY timestamp DESC LIMIT 1", (nodename,)).fetchone()
-    conn.close()
-
-    # log_action(logging.INFO, f"Returned JSON data for node {nodename}")
-
-    return jsonify({
-        'node_values': [dict(row) for row in node_values],
-        'node_data': dict(node_data) if node_data else {},
-        'latest_record': dict(latest_record) if latest_record else {}
-    })
-
-@app.route('/getnodelatestjson/<nodename>')
-def get_latest_node_json(nodename):
-    """Return the latest node record in JSON format"""
-    conn = get_db_connection()
-    latest_record = conn.execute("SELECT * FROM NodeValues WHERE nodename = ? ORDER BY timestamp DESC LIMIT 1", (nodename,)).fetchone()
-    node_data = conn.execute("SELECT * FROM NodeData WHERE nodename = ?", (nodename,)).fetchone()
-    conn.close()
-
-    # log_action(logging.INFO, f"Returned latest JSON data for node {nodename}")
-
-    return jsonify({
-        'latest_record': dict(latest_record) if latest_record else {},
-        'node_data': dict(node_data) if node_data else {}
-    })
 
 @app.route('/edit')
 def edit():
@@ -261,6 +230,66 @@ def apis():
     # log_action(logging.INFO, "Display Api Page")
 
     return render_template('apis.html', domainUrl=domainUrl)
+
+
+
+
+
+
+
+@app.route('/getUniqueNodeNames', methods=['GET'])
+def get_unique_node_names():
+    """
+    Returns a JSON response with a list of unique node names.
+    """
+    conn = get_db_connection()
+    if conn is None:
+        return jsonify({'status': 'error', 'message': 'Database connection failed'}), 500
+
+    try:
+        unique_nodes = conn.execute("SELECT DISTINCT nodename FROM NodeValues").fetchall()
+        conn.close()
+
+        node_list = [row['nodename'] for row in unique_nodes]
+
+        return jsonify({'status': 'success', 'uniqueNodeNames': node_list}), 200
+    except sqlite3.Error as e:
+        return jsonify({'status': 'error', 'message': f'Database query failed: {e}'}), 500
+
+
+
+
+@app.route('/getnodejson/<nodename>')
+def get_node_json(nodename):
+    """Return node data in JSON format"""
+    conn = get_db_connection()
+    node_values = conn.execute("SELECT * FROM NodeValues WHERE nodename = ?", (nodename,)).fetchall()
+    node_data = conn.execute("SELECT * FROM NodeData WHERE nodename = ?", (nodename,)).fetchone()
+    latest_record = conn.execute("SELECT * FROM NodeValues WHERE nodename = ? ORDER BY timestamp DESC LIMIT 1", (nodename,)).fetchone()
+    conn.close()
+
+    # log_action(logging.INFO, f"Returned JSON data for node {nodename}")
+
+    return jsonify({
+        'node_values': [dict(row) for row in node_values],
+        'node_data': dict(node_data) if node_data else {},
+        'latest_record': dict(latest_record) if latest_record else {}
+    })
+
+@app.route('/getnodelatestjson/<nodename>')
+def get_latest_node_json(nodename):
+    """Return the latest node record in JSON format"""
+    conn = get_db_connection()
+    latest_record = conn.execute("SELECT * FROM NodeValues WHERE nodename = ? ORDER BY timestamp DESC LIMIT 1", (nodename,)).fetchone()
+    node_data = conn.execute("SELECT * FROM NodeData WHERE nodename = ?", (nodename,)).fetchone()
+    conn.close()
+
+    # log_action(logging.INFO, f"Returned latest JSON data for node {nodename}")
+
+    return jsonify({
+        'latest_record': dict(latest_record) if latest_record else {},
+        'node_data': dict(node_data) if node_data else {}
+    })
 
 
 if __name__ == '__main__':

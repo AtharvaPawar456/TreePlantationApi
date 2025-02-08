@@ -1,0 +1,90 @@
+# Tree Plantation : API Guide
+
+# Domain: 
+
+## API 1 : To get all the Node Names:
+
+Route : "/getUniqueNodeNames"
+method  GET
+
+Response:
+```
+{"status":"success","uniqueNodeNames":["Node1","Node12434","Tree1"]}
+```
+
+
+## API 2 : To get all the Node Data for given nodename:
+
+Route : "/getnodejson/<nodename>"
+eg: Route : "getnodejson/Tree1"
+method  GET
+
+Response:
+```
+{
+  "latest_record": {
+    "height": 30,
+    "id": 21,
+    "ipaddress": "127.0.0.1",
+    "nodename": "Tree1",
+    "timestamp": "2024-11-01 19:09:15.867022"
+  },
+  "node_data": {
+    "latitude": 19.216439,
+    "longitude": 72.899422,
+    "nodename": "Tree1"
+  },
+  "node_values": [
+    {
+      "height": 10,
+      "id": 19,
+      "ipaddress": "127.0.0.1",
+      "nodename": "Tree1",
+      "timestamp": "2024-11-01 18:55:44.562024"
+    },
+    {
+      "height": 10,
+      "id": 20,
+      "ipaddress": "127.0.0.1",
+      "nodename": "Tree1",
+      "timestamp": "2024-11-01 18:55:46.033954"
+    },
+    {
+      "height": 30,
+      "id": 21,
+      "ipaddress": "127.0.0.1",
+      "nodename": "Tree1",
+      "timestamp": "2024-11-01 19:09:15.867022"
+    }
+  ]
+}
+```
+
+
+
+
+
+
+## API 3 : To get latest data for given Node Name:
+
+Route : "/getnodelatestjson/<nodename>"
+eg: Route : "getnodelatestjson/Tree1"
+method  GET
+
+Response:
+```
+{
+  "latest_record": {
+    "height": 30,
+    "id": 21,
+    "ipaddress": "127.0.0.1",
+    "nodename": "Tree1",
+    "timestamp": "2024-11-01 19:09:15.867022"
+  },
+  "node_data": {
+    "latitude": 19.216439,
+    "longitude": 72.899422,
+    "nodename": "Tree1"
+  }
+}
+```
